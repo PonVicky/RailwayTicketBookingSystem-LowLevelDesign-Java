@@ -38,21 +38,29 @@ This repository contains a **Railway Ticket Booking System** implemented in Java
 
 ---
 
-🖥️ How It Works
-**Booking Process**
+##🖥️ How It Works
+
+**Booking Process**⬇️
+
 1.Seats are allocated based on availability in the following order:
   - Lower Berth
   - Middle Berth
   - Upper Berth
   - RAC
   - Waiting List
-2If a seat is unavailable, the passenger is added to the next category in order.
-**Cancellation Process**
+2.If a seat is unavailable, the passenger is added to the next category in order.
+
+
+**Cancellation Process**⬇️
+
 1.When a ticket is canceled:
   - A passenger from the RAC list is upgraded to the canceled seat.
   - A passenger from the Waiting List is moved to the RAC list.
 2.The system ensures that all categories are dynamically updated.
-**Example Flow**
+
+
+**Example Flow**⬇️
+
 1.Booking:
   - Passenger A requests a lower berth → Allocated.
   - Passenger B requests a middle berth → Allocated.
